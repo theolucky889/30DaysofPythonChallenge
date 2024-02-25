@@ -36,3 +36,18 @@ area_of_circle = pi * radius_circle * radius_circle
 circumference__circle = 2 * pi * radius_circle
 print("The area of the circle is: ", area_of_circle)
 print("The circumference of the circle is: ", circumference__circle)
+
+# Comparison statement
+pyth_len = "python"
+drag_len = "dragon"
+print(len(pyth_len) != len(drag_len))   # Falsy comparison statement
+
+# Use and operator to check if 'on' is found in both 'python' and 'dragon'
+print("on in python", "on" in "python")
+print("on in dragon", "on" in "dragon")
+
+# I hope this course is not full of jargon. Use in operator tocheck if jargon is in the sentence
+sentence = "I hope this course is not full of jargon."
+print("Is jargon in the sentence?", "jargon" in sentence)
+
+# There is no 'on' in both dragon and python
