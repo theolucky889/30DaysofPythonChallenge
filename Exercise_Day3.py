@@ -61,3 +61,5 @@ print(len_size)
 
 float_len_size = print(float(len_size))     # Convert to float
 str_len_size = print(str(len_size))         # Conver to string
+
+# Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python
