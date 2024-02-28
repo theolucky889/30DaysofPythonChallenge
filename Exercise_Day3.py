@@ -132,4 +132,81 @@ float_len_size = print(float(len_size))     # Convert to float
 str_len_size = print(str(len_size))         # Conver to string
 
 # Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python
+# Function to check if a number is even
+def is_even(number):
+    return number % 2 == 0
+"""
+# Test the function
+number = 6
+if is_even(number):
+    print(number, "is even")
+else:
+    print(number, "is odd")
+    """
+number = float(input("Enter number: "))
+if is_even(number):
+    print(number, "is even")
+else:
+    print(number, "is odd")
 
+# Check if the floor division of 7 by 3 is equal to the int converted value of 2.7
+# Floor division of 7 by 3
+floor_division_result = 7 // 3
+
+# Conver 2.7 to an integer
+int_convert_value = int(2.7)
+
+# Check if they are equal
+if floor_division_result == int_convert_value:
+    print("The floor division of 7 by 3 is equal to the integer converted value of 2.7")
+else:
+    print("The floor division of 7 by 3 is not equal to the integer converted value of 2.7")
+
+# Check if type of '10' is equal to type of 10
+if type('10') == type(10):
+    print("type '10' is equal to the type of 10")
+else:
+    print("type of '10' is not equal to the type of 10")
+    
+# check if type of '9.8' is equal to type of 10
+if type(9.8) == type(10):
+    print("type of '9.8' is equal to type of 10")
+else:
+    (print("type of '9.8' is not equal to type of 10"))
+    
+# Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person
+hours_worked = float(input("Enter Hours Worked = "))
+rate_per_hour = float(input("Rate per hour = "))
+weekly_earning = hours_worked * rate_per_hour
+print("Your weekly earning is: ", weekly_earning)
+
+# Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+years_lived = float(input("Enter number of years you have lived: "))
+years_to_seconds = 365 * 24 * 60 * 60
+print("You have lived for: ", years_to_seconds, "seconds")
+
+# Write a Python script that displays the following table
+"""
+1 1 1 1 1 
+2 1 2 4 8 
+3 1 3 9 27 
+4 1 4 16 64 
+5 1 5 25 125 
+"""
+
+# Define the number of rows and columns
+num_rows = 5
+num_columns = 5
+
+# Generate the table
+for i in range (1, num_rows + 1):
+    # Print the first column (i)
+    print(i, end='')
+    
+    #Print the subsequent columns
+    for j in range(1, num_columns):
+        # Calculate the value for each column(i^j)
+        value = i ** j
+        print(value, end='')
+    # Move to the next row
+    print()
