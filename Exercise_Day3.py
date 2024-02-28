@@ -37,6 +37,75 @@ circumference__circle = 2 * pi * radius_circle
 print("The area of the circle is: ", area_of_circle)
 print("The circumference of the circle is: ", circumference__circle)
 
+# Calculate the slope, x-intercept and y-intercept of y = 2x - 2
+# Equation: y = 2x - 2
+slope_1 = 2
+y_intercept = -2
+
+# X-interecept, y = 0
+x_intercept = -y_intercept / slope_1
+
+print("Slope= ", slope_1)
+print("X-intercept= ", x_intercept)
+print("Y-intercept= ", y_intercept)
+
+# Slope is (m = y2-y1/x2-x1). Find the slope and euclidean distance between point(2,2) and point(6,10)
+# Coordinates of the point
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+
+# Calculate the slope
+slope_2 = y2-y1/x2-x1
+
+# Calculate Euclidean distance
+euclidean_distance = ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+
+print("Slope= ", slope_2)
+print("Euclidean Distance= ", euclidean_distance)
+
+# Compare the result of the slopes
+# Slope from equation y = 2x - 2
+slope_equation = 2
+
+# Slope between points (2,2) and (6,10)
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+slope_points = (y2-y1) / (x2-x1)
+
+# Compare the slopes
+if slope_equation == slope_points:
+    print("The slopes are equal")
+    print("Slope from equation y = 2x - 2: ", slope_equation)
+    print("Slope between points (2,2) and (6,10): ", slope_points)
+else:
+    print("The slopes are not equal")
+    print("Slope from equation y = 2x - 2: ", slope_equation)
+    print("Slope between points (2,2) and (6,10): ", slope_points)
+    
+# Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+# define the coefficients of the quadratic equation
+a = 1
+b = 6
+c = 9
+
+# Calculate the discriminant
+discriminant = b**2 - 4*a*c
+
+# Check if the discriminant is non-negative
+if discriminant >= 0:
+    # Calculate the square root of the discriminant
+    sqrt_discriminant = discriminant ** 0.5
+    
+    # Calculate the two possible solutions for x
+    x1 = (-b + sqrt_discriminant) / (2*a)
+    x2 = (-b - sqrt_discriminant) / (2*a)
+    
+    # Print the solution
+    print("Solution 1: x = ", x1)
+    print("Solution 2: x = ", x2)
+else:
+    print("No real solution exist")
+
 # Comparison statement
 pyth_len = "python"
 drag_len = "dragon"
@@ -63,3 +132,4 @@ float_len_size = print(float(len_size))     # Convert to float
 str_len_size = print(str(len_size))         # Conver to string
 
 # Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python
+
