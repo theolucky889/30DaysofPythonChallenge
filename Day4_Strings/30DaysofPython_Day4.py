@@ -48,4 +48,18 @@ print("Day 4\t1\t35")
 print("This is a blackslash symbol (\\)")   # To write backslash
 print("In every programming language it starts with \"Hello, World!\"") # To write a double quote inside
 
+# String Formatting
+#   Old style string formatting (% Operator)
+"""
+In python, there are many ways of formatting strings. The "%"
+operator is used to format a set of variables enclosed in a "tuple"
+(a fixed list), together with a format string, which containts
+normal text together with "argument specifiers", special symbols
+like "%s", "%d", "%f", "%.number of digitsf".
+- %s = String (or any object with string representation, like numbers)
+- %d = integers
+- %f = floating point numbers
+- "%.number of digitsf" = Floating point numbers with fixed precision
+    """
 
+# Strings only
