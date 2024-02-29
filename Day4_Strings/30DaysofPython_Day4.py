@@ -28,3 +28,15 @@ print(len(first_name))
 print(len(last_name))
 print(len(first_name) > len(last_name))
 print(len(full_name))
+
+# Escape sequence in strings
+# In python and other programming languages \ followed by a character is an escape sequence
+"""
+- \n : new line
+- \t : Tab means (8 spaces)
+- // : back slash
+- \' : single quote (')
+- \" : double quote (")    
+    """
+# Let's see the use of the above escape sequences with examples
+
