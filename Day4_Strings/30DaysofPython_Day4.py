@@ -82,3 +82,11 @@ print(formated_string)
 # NEW style string formatting (str.format)
 # Introduced in Python3
 
+first_name = "Theodore Lucky"
+last_name = "Tendy"
+language = "Python"
+formated_string = "I am {} {}. I am learning {}".format(first_name, last_name, language)
+print(formated_string)
+
+a = 4
+b = 3
