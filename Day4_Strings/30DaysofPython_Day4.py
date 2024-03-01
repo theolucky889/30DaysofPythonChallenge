@@ -105,3 +105,14 @@ pi = 3.14
 area = pi * radius ** 2
 formated_string = "The area of a circle with a radius { is {:.2f}}".format(radius, area)
 print(formated_string)
+
+# String Interpolation / f-Strings (Python 3.6+)
+c = 4
+d = 3
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} ** {b} = {a ** b}")
