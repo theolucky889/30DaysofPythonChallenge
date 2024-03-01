@@ -90,3 +90,18 @@ print(formated_string)
 
 a = 4
 b = 3
+
+print("{} + {} = {}".format(a, b, a + b))
+print("{} - {} = {}".format(a, b, a - b))
+print("{} * {} = {}".format(a, b, a * b))
+print("{} / {} = {}".format(a, b, a / b))
+print("{} % {} = {}".format(a, b, a % b))
+print("{} // {} = {}".format(a, b, a // b))
+print("{} ** {} = {}".format(a, b, a ** b))
+
+# Strings and numbers
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+formated_string = "The area of a circle with a radius { is {:.2f}}".format(radius, area)
+print(formated_string)
