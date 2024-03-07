@@ -103,7 +103,7 @@ print("{} ** {} = {}".format(a, b, a ** b))
 radius = 10
 pi = 3.14
 area = pi * radius ** 2
-formated_string = "The area of a circle with a radius { is {:.2f}}".format(radius, area)
+formated_string = "The area of a circle with a radius {} is {:.2f}.".format(radius, area)
 print(formated_string)
 
 # String Interpolation / f-Strings (Python 3.6+)
@@ -116,3 +116,63 @@ print(f"{a} / {b} = {a / b}")
 print(f"{a} // {b} = {a // b}")
 print(f"{a} % {b} = {a % b}")
 print(f"{a} ** {b} = {a ** b}")
+
+# Python Strings as Sequences of Characters
+"""
+Python strings are sequences of characters, and share their basic methods of access with other
+python ordered sequences of objects, lists and tuples. THe simplest way of extracting single
+characters from strings (and individual members from any sequence) is to unpack them into
+corresponding variables
+    """
+# Unpacking Characters
+language = "Python"
+a,b,c,d,e,f = language      # Unpacking sequence characters into variables
+print(a)    # P
+print(b)    # y
+print(c)    # t
+print(d)    # h
+print(e)    # o
+print(f)    # n
+
+# Accessing Characters in Strings by index
+"""
+In programming, counting starts from zero. Therefore the first letter of a string is at zero
+index and the last letter of a string is the length of a string minus one.
+    """
+language = "Python"
+first_letter = language[0]
+print(first_letter)     # p
+second_letter = language[1]
+print(second_letter)    # y
+last_index = len(language) - 1
+last_letter = language[last_index]
+print(last_letter)      # n
+
+# If we want to start from right end, we can use negative indexing, -1 is the last index
+language = "Python"
+last_letter = language[-1]
+print(last_letter)  # n
+second_last = language[-2]
+print(second_last)  # o
+
+# Slicing Python Strings
+# In python we can slide strings into substrings
+language = "Python"
+first_three = language[0:3]     # Starts at zero index and upto 3 but not including 3
+print(first_three)  # Pyt
+# Another way
+last_three = language[-3:]
+print(last_three)   # hon
+last_three = language[3:]
+print(last_three)   # hon
+
+# Reversing a String
+# We can easily reverse strings in python
+greeting = "Hello, World!"
+print(greeting[::-1])   # !dlroW ,olleH
+
+# Skipping Characters While Slicing
+# It is possible to skip characters while slicing by passing step argument to slice method
+language = "Python"
+pto = language[0:6:2]
+print(pto)  # pto
