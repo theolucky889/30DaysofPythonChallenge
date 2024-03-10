@@ -212,3 +212,34 @@ print(challenge.rfind("y"))     # 16
 print(challenge.rfind("th"))    # 17
 
 # - format() : formats string into a nicer output
+first_name = "Theodore Lucky"
+last_name = "Tendy"
+age = 21
+job = "intern"
+country = "Taiwan"
+sentence = "I am {} {}. I am an {}. I am {} years old. I live in {}.".format(first_name, last_name, age, job, country)
+print(sentence)
+# I am Theodore Lucky Tendy, I am 21 years old. I am an intern, I live in Indonesia
+
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+result = "The area of a circle with radius {} is {}".format(str(radius), str(area))
+print(result)
+# The area of a circle with radius 10 is 314
+
+# - index() : Returns the lowest index of a substring, additional arguments indicate
+# starting and ending index (defualt 0 and string length -1). If the substring is not found it raises valueEror
+challenge = "thirty days of python"
+sub_string = "da"
+print(challenge.index(sub_string))      # 7
+print(challenge.index(sub_string, 9))   # error
+
+# - rindex() : Returns the highest index of a substring, additional arguments indicate 
+# the starting and ending index (default 0 and string length -1)
+challenge = "thrity days of python"
+sub_string = "da"
+print(challenge.rindex(sub_string))     # 8
+print(challenge.rindex(sub_string, 9))  # error
+
+# - isalnum() : Checks alphanumeric characters\
