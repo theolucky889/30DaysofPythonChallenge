@@ -337,4 +337,23 @@ challenge = "thirty days of python"
 print(challenge.replace("python", "coding"))    # "thirty days of coding"
 
 # - split() : Splits the string, using given string or space as a seperator
+challenge = "thirty days of python"
+print(challenge.split())    # ["thirty", "days", "of", "python"]
 
+challenge = "thirty, days, of, python"
+print(challenge.split(", "))    # ["thirty", "days", "of", "python"]
+
+# - title() : Returns a title cased string
+challenge = "thirty days of python"
+print(challenge.title())    # Thirty Days Of Python
+
+# - swapcase() : Converts all uppercase characters to lowercase and lowercase to uppercase
+challenge = "Thirty Days Of Python"
+print(challenge.swapcase())     # "tHIRTY dAYS oF pYTHON"
+
+# - startswith() : Checks if string starts with the specified string
+challenge = "thirty days of python"
+print(challenge.startswith("thirty"))   # True
+
+challenge = "30 days of python"
+print(challenge.startswith("30"))   # False
