@@ -233,13 +233,54 @@ print(result)
 challenge = "thirty days of python"
 sub_string = "da"
 print(challenge.index(sub_string))      # 7
-print(challenge.index(sub_string, 9))   # error
+#print(challenge.index(sub_string, 9))   # error
 
 # - rindex() : Returns the highest index of a substring, additional arguments indicate 
 # the starting and ending index (default 0 and string length -1)
 challenge = "thrity days of python"
 sub_string = "da"
 print(challenge.rindex(sub_string))     # 8
-print(challenge.rindex(sub_string, 9))  # error
+#print(challenge.rindex(sub_string, 9))  # error
 
-# - isalnum() : Checks alphanumeric characters\
+# - isalnum() : Checks alphanumeric characters
+challenge = "ThirtyDaysPython"
+print(challenge.isalnum())  # True
+
+challenge = "30DaysPython"
+print(challenge.isalnum())  # True
+
+challenge = "thirty days of python"
+print(challenge.isalnum())  # False, space is not an alphanumeric character
+
+challenge = "thirty days of python 2024"
+print(challenge.isalnum())  # False
+
+# - isalpha : Checks if all string elements are alphabet characters (a-z and A-Z)
+challenge = "thirty days of python"
+print(challenge.isalpha())  # False, space is excluded
+
+challenge = "ThirtyDaysPython"
+print(challenge.isalpha())  # True
+
+num = "12 3"
+print(num.isalpha())        # False
+
+# - isdecimal() : Checks if all characters in a string are decimal (0-9)
+num = "12 3"
+print(num.isdecimal())      # False, space excluded
+
+decimal = "\u00B2"
+print(decimal.isdecimal())  # False
+
+challenge = "30DaysPython"
+print(challenge.isdecimal())# False
+
+circle = "314"
+print(circle.isdecimal())   # True
+
+# - isdigit() : Checks if all characters in a string are numbers (0-9 and some other unicode characters for numebrs)
+challenge = "Thrity"
+print(challenge.isdigit())  # False
+
+challenge = "30"
+print(challenge)
