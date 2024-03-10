@@ -176,3 +176,28 @@ print(greeting[::-1])   # !dlroW ,olleH
 language = "Python"
 pto = language[0:6:2]
 print(pto)  # pto
+
+# Strings Methods
+# There are many string methods which allow us to format strings. See some of the string methods:
+
+# - capitalize() : Converts the first character of the string to capital letter
+challenge = "thirty days of python"
+print(challenge.capitalize())   # "Thirty days of python"
+
+# - count() : return occurences of substring in string, count(subtring, start=..., end=...).
+# The start is a starting indexing for counting and end is the last index to count
+challenge = "thirty days of python"
+print(challenge.count("y"))         # 3
+print(challenge.count("y", 7, 14))  # 1
+print(challenge.count("th"))        # 2
+
+# - endswith() : Chekcs if a string ends with a specific ending
+challenge = "thirty days of python"
+print(challenge.endswith("on"))     # True
+print(challenge.endswith("tion"))   # False
+
+# - expandtabs() : Replace tab character with spaces, default tab size is 8. It takes tab size argument
+challenge = "thirty days of python"
+print(challenge.expandtabs())   # "thirty   days   of   python"
+print(challenge.expandtabs(10)) # "thirty     days     of     python"
+
