@@ -283,4 +283,43 @@ challenge = "Thrity"
 print(challenge.isdigit())  # False
 
 challenge = "30"
-print(challenge)
+print(challenge.isdigit())  # True
+
+challenge = "\u00B2"
+print(challenge.isdigit())  # True
+
+# - isnumeric() : Checks if all characters in a string are numbers or number related (just like isdigit(), but accpets more symbols like ½)
+num = "10"
+print(num.isnumeric())  # True
+
+num = "\u008D"
+print(num.isnumeric())  # True ½
+
+num = "10.5"
+print(num.isnumeric())  # False
+
+# - isidentifier() : Checks for a valid identifier - it checks if a string is a valid variable name
+challenge = "30DaysofPython"
+print(challenge.isidentifier())     # False, because it starts with anumber
+
+challenge = "thirty_days_of_python"
+print(challenge.isidentifier())     # True, spaces are excluded
+
+# - islower() : Checks if all alphabet characters in the string are lowercase
+challenge = "thirty days of python"
+print(challenge.islower())      # True
+
+challenge = "Thirty days of python"
+print(challenge.islower())      # False
+
+# - isupper() : Check if all alphabet characters in the string are uppercase
+challenge = "thirty days of python"
+print(challenge.isupper())      # False
+
+challenge = "THIRTY DAYS OF PYTHON"
+print(challenge.isupper())      # True
+
+# - join() : Returns a concatenated string
+web_tech = ["HTML", "CSS", "JavaScript", "React"]
+result = " ".join(web_tech)
+print(result)   # "HTML CSS JavaScript React"
