@@ -323,3 +323,18 @@ print(challenge.isupper())      # True
 web_tech = ["HTML", "CSS", "JavaScript", "React"]
 result = " ".join(web_tech)
 print(result)   # "HTML CSS JavaScript React"
+
+web_tech = ["HTML", "CSS", "JavaScript", "React"]
+result = "# ".join(web_tech)
+print(result)   #"HTML# CSS# JavaScript# React"
+
+# - strip() : Removes all given characters starting from the beginning and end of string
+challenge = "thirty days of pythoonnn"
+print(challenge.strip("noth"))  # "irthy days of py"
+
+# - replace() :  Replaces substring with a given string
+challenge = "thirty days of python"
+print(challenge.replace("python", "coding"))    # "thirty days of coding"
+
+# - split() : Splits the string, using given string or space as a seperator
+
