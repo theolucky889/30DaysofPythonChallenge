@@ -17,3 +17,20 @@ print(first_letter)
 
 # 5. Print the length of the company string using len() method and print()
 print(len(company))
+
+# 6. Change all the characters to uppercase letters using upper() method.
+company_uppercase = company.upper()
+print(company_uppercase)
+
+# 7. Change all the characters to lowercase letters using lower() method.
+company_lowercase = company.lower()
+print(company_lowercase)
+
+# 8. Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+company_capitalize = company.capitalize()
+company_title = company.title()
+company_swap = company.swapcase()
+
+print(company_capitalize)
+print(company_title)
+print(company_swap)
