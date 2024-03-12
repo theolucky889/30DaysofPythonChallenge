@@ -153,3 +153,38 @@ print(join_libraries)
 I am enjoying this challenge.
 I just wonder what is next.
 """
+sentence = "I am enjoying this challenge. \nI just waonder what is next."
+print(sentence)
+
+"""
+34. Use a tab escape sequence to write the following lines.
+Name      Age     Country   City
+Asabeneh  250     Finland   Helsinki
+"""
+print("Name\tAge\tCountry\tCity")
+print("Theodore\t21\tIndonesia\tJakarta")
+
+"""
+35. Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+The area of a circle with radius 10 is 314 meters square.
+"""
+radius = 10
+area = 3.14 * radius ** 2
+formatting_sentence = "The area of a circle with radius %d is %.2f meters square."%(radius, area)
+print(formatting_sentence)
+
+"""
+36. Make the following using string formatting methods:
+8 + 6 = 14
+8 - 6 = 2
+8 * 6 = 48
+8 / 6 = 1.33
+8 % 6 = 2
+8 // 6 = 1
+8 ** 6 = 262144
+    """
+a = 8
+b = 6
+
