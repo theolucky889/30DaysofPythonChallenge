@@ -97,3 +97,16 @@ for_sub = "F"
 print(for_all.index(for_sub))
 
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print(for_all.rfind("l"))
+
+# 23. Use index or find to find the position of the first occurrence of the word 'because' 
+# in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+you_cannot = "You cannot end a sentence with because because because is a conjunction"
+bec_ause = "because"
+print(you_cannot.index(bec_ause))
+
+# 24. Use rindex to find the position of the last occurrence of the word because
+# in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print(you_cannot.rindex(bec_ause))
+
+# 25. 
