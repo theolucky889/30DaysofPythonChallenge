@@ -109,4 +109,19 @@ print(you_cannot.index(bec_ause))
 # in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 print(you_cannot.rindex(bec_ause))
 
-# 25. 
+# 25. Slice out the phrase 'because because because' in the following
+# sentence: 'You cannot end a sentence with because because because is a conjunction'
+cannot_split = you_cannot.split()
+slice_because1 = cannot_split[6]
+slice_because2 = cannot_split[7]
+slice_because3 = cannot_split[8]
+print(slice_because1, slice_because2, slice_because3)
+
+# 26. Does 'Coding For All' start with a substring Coding?
+for_all = "Coding For All"
+print(for_all.startswith("Coding"))
+
+# 27. Does 'Coding For All' start with a substring coding?
+for_all = "Coding For All"
+print(for_all.startswith("coding"))
+
