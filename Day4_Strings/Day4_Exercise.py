@@ -57,3 +57,5 @@ split_phrase = for_all.split()
 split_phrase[-1] = "All"
 new_phrase = " ".join(split_phrase)
 print(new_phrase)
+
+# 13. Split the string 'Coding For All' using space as the separator (split()) .
