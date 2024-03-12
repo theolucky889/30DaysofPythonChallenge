@@ -40,3 +40,20 @@ first_word = company.split()[0]
 print(first_word)
 
 # 10. Check if Coding For All string contains a word Coding using the method index, find or other methods.
+print(company.find("Coding"))
+substring = "Coding"
+print(company.index(substring))
+other_company = "Hello"
+print(other_company.startswith("Coding"))
+print(company.startswith("Coding"))
+
+# 11. Replace the word Coding in the string "Coding for all" to Python
+print(company.replace("Coding", "Python"))
+
+# 12. Change Python for Everyone to Python for All using the replace method or other methods.
+for_all = "Python for Everyone"
+print(for_all.replace("Everyone", "All"))
+split_phrase = for_all.split()
+split_phrase[-1] = "All"
+new_phrase = " ".join(split_phrase)
+print(new_phrase)
