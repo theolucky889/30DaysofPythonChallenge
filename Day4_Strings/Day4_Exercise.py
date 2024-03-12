@@ -117,11 +117,39 @@ slice_because2 = cannot_split[7]
 slice_because3 = cannot_split[8]
 print(slice_because1, slice_because2, slice_because3)
 
-# 26. Does 'Coding For All' start with a substring Coding?
+# 28. Does 'Coding For All' start with a substring Coding?
 for_all = "Coding For All"
 print(for_all.startswith("Coding"))
 
-# 27. Does 'Coding For All' start with a substring coding?
+# 29. Does 'Coding For All' start with a substring coding?
 for_all = "Coding For All"
 print(for_all.startswith("coding"))
 
+# 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+coding_spaces = '   Coding For All      '
+trim_spaces = coding_spaces.strip()
+print(trim_spaces)
+
+"""
+31. Which one of the following variables return True when we use the method isidentifier():
+ - 30DaysOfPython
+ - thirty_days_of_python
+    """
+python_1 = "30DaysOfPython"
+python_2 = "thirty_days_of_python"
+
+print(python_1.isidentifier(), python_2.isidentifier())
+
+# 32. The following list contains the names of some of python 
+# libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. 
+# Join the list with a hash with space string.
+
+python_libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+join_libraries = "# ".join(python_libraries)
+print(join_libraries)
+
+"""
+33. Use the new line escape sequence to separate the following sentences.
+I am enjoying this challenge.
+I just wonder what is next.
+"""
