@@ -59,3 +59,33 @@ new_phrase = " ".join(split_phrase)
 print(new_phrase)
 
 # 13. Split the string 'Coding For All' using space as the separator (split()) .
+print(company.split(" "))
+
+# 14. "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+companies = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+split_companies = companies.split(", ")
+print(split_companies)
+
+# 15. What is the character at index 0 in the string Coding For All.
+index_zero = company[0]
+print(index_zero)
+
+# 16. What is the last index of the string Coding For All.
+index_last = company[-1]
+print(index_last)
+
+# 17. What character is at index 10 in "Coding For All" string.
+index_ten = company[10]
+print(index_ten)
+
+# 18. Create an acronym or an abbreviation for the name 'Python For Everyone'.
+for_everyone = "Python For Everyone"
+acronym = "".join(word[0] for word in for_everyone.split())
+print(acronym)
+
+# 19. Create an acronym or an abbreviation for the name 'Coding For All'.
+for_all = "Coding For All"
+new_acronym = "".join(word[0] for word in for_all.split())
+print(new_acronym)
+
+# 20. Use index to determine the position of the first occurrence of C in Coding For All.
