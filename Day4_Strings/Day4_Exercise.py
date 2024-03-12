@@ -89,3 +89,11 @@ new_acronym = "".join(word[0] for word in for_all.split())
 print(new_acronym)
 
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
+coding_sub = "C"
+print(for_all.index(coding_sub))
+
+# 21. Use index to determine the position of the first occurrence of F in Coding For All.
+for_sub = "F"
+print(for_all.index(for_sub))
+
+# 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
