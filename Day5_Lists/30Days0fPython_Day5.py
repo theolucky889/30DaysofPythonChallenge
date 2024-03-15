@@ -20,4 +20,5 @@ HOW TO CREATE A LIST
 
 # Using list built-in function
 lst = list()
-empty_list 
+empty_list = list()     # empty list
+print(len(empty_list))  # 0
