@@ -29,3 +29,22 @@ empty_list = []         # empty list
 print(len(empty_list))  # 0
 
 # List with initial values. We use len() to find the length of the list
+fruits = ["banana", "orange", "mango", "lemon"]
+vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
+animal_products = ["milk", "meat", "butter", "yogurt"]
+web_techs = ["HTML", "CSS", "JavaScript", "React", "Redux", "NodeJS", "MongoDB"]
+countries = ["Finland", "Estonia", "Denmark", "Sweden", "Norway"]
+
+print("Fruits: ", fruits)
+print("Number of fruits: ", len(fruits))
+print("Vegetables: ", vegetables)
+print("Number of vegetables: ", len(vegetables))
+print("Animal Products: ", animal_products)
+print("Number of animal products: ", len(animal_products))
+print("Web Technologies: ", web_techs)
+print("Number of web technologies: ", len(web_techs))
+print("Countries: ", countries)
+print("Number of countries: ", len(countries))
+
+# Lists can have items of different data types
+lst = ["Theodore", 22, True, {"country":"Finland", "city":"Helsinki"}]
