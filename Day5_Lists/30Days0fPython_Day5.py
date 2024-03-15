@@ -22,3 +22,10 @@ HOW TO CREATE A LIST
 lst = list()
 empty_list = list()     # empty list
 print(len(empty_list))  # 0
+
+# Using square brackets []
+lst = []
+empty_list = []         # empty list
+print(len(empty_list))  # 0
+
+# List with initial values. We use len() to find the length of the list
