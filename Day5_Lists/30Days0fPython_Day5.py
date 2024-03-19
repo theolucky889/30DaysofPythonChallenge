@@ -48,3 +48,8 @@ print("Number of countries: ", len(countries))
 
 # Lists can have items of different data types
 lst = ["Theodore", 22, True, {"country":"Finland", "city":"Helsinki"}]
+
+# Accessing List Items Using Positive Indexing
+# We access each item in a list using their index. A list index starts from 0.
+fruits = ["banana", "orange", "mango", "lemon"]
+first_fruit = fruits[0]
