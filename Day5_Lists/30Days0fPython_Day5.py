@@ -52,4 +52,13 @@ lst = ["Theodore", 22, True, {"country":"Finland", "city":"Helsinki"}]
 # Accessing List Items Using Positive Indexing
 # We access each item in a list using their index. A list index starts from 0.
 fruits = ["banana", "orange", "mango", "lemon"]
-first_fruit = fruits[0]
+first_fruit = fruits[0]     # accessing the first item using its index
+print(first_fruit)          # banana
+second_fruit = fruits[1]
+print(second_fruit)         # orange
+last_fruit = fruits[3]
+print(last_fruit)           # lemon
+
+# Last index
+last_index = len(fruits) - 1
+last_fruit = fruits[last_index]
