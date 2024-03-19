@@ -62,3 +62,7 @@ print(last_fruit)           # lemon
 # Last index
 last_index = len(fruits) - 1
 last_fruit = fruits[last_index]
+
+# Accessing List Items Using Negative Indexing
+# Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item.
+fruits = ["banana", "orange", "mango", "lemon"]
