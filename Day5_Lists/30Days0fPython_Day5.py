@@ -154,7 +154,7 @@ lst.append(item)
 fruits = ["banana", "orange", "mango", "lemon"]
 print(fruits)           # ["banana", "orange", "mango", "lemon"]
 fruits.append("lime")
-print(fruits)           # ["banana", "orange", "mango", "lemon", lemon]
+print(fruits)           # ["banana", "orange", "mango", "lemon", lime]
 
 # Inserting Items into a List
 # We can use insert() method to insert a single item at a specified index in a list.
