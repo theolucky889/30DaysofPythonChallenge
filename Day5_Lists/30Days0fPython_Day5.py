@@ -328,3 +328,26 @@ fruits = ["banana", "orange", "mango", "lemon"]
 print(fruits.index("mango"))   # 2
 ages = [22, 19, 24, 25, 26, 24, 25, 24]
 print(ages.index(24))   # 2, the first occurence
+
+# Reversing a list
+# reverse() method reverses the order of a list
+
+# syntax
+"""
+lst = ["item1", "item2"]
+lst.reverse()
+"""
+
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.reverse()
+print(fruits)
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.reverse()
+print(ages)
+
+# Sorting List Items
+"""To sort lists we can use sort() method or sorted() built-in functions. the sort() method
+reorders the list items in ascending order and modifies the original list. If an argument of sort()
+method reverse is equal to true, it will arrange the list in descending order"""
+
+
