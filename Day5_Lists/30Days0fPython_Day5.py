@@ -185,3 +185,21 @@ fruits.remove("banana")
 print(fruits)               # ["banana", "orange", "mango", "lemon"] this method removes the first occurence of the item in the list
 fruits.remove("lemon")
 print(fruits)               # ["banana", "orange", "mango"]
+
+# Removing Items Using Pop
+# the pop() method removes the specified index, (or the last item if index is not specified)
+
+# syntax
+"""
+lst = ["item1", "item2"]
+lst.pop()       # last item
+or
+lst.pop(index)
+"""
+
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.pop()
+print(fruits)       #["banana", "orange", "mango"]
+
+fruits.pop(0)
+print(fruits)       #["orange", "mango"]
