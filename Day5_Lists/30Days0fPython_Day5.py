@@ -203,3 +203,15 @@ print(fruits)       #["banana", "orange", "mango"]
 
 fruits.pop(0)
 print(fruits)       #["orange", "mango"]
+
+# Removing Items using Del
+# del keyword removes the specified index and it can also be used to delete items within index range. It can also delete the list completely
+
+# syntax
+"""
+lst = ["item1", "item2"]
+del lst[index]  # only deletes a single item
+del lst         # deletes the whole list
+"""
+
+fruits = ["banana", "orange", "mango", "lemon", "kiwi", "lime"]
