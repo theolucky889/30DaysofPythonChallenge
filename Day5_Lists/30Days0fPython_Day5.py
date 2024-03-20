@@ -98,4 +98,11 @@ print(rest)
 print(tenth)
 
 # Third Example about unpacking list
-countries = []
+countries = ["Germany", "France", "Belgium", "Sweden", "Denmark", "Finland", "Norway", "Iceland", "Estonia"]
+gr, fr, bg, sw, *scandic, es = countries
+print(gr)
+print(fr)
+print(bg)
+print(sw)
+print(scandic)
+print(es)
