@@ -350,4 +350,27 @@ print(ages)
 reorders the list items in ascending order and modifies the original list. If an argument of sort()
 method reverse is equal to true, it will arrange the list in descending order"""
 
+# syntax
+"""lst = ["item1", "item2"]
+lst.sort()                  # ascending
+lst.sort(reverse=True)      # descending"""
 
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.sort()
+print(fruits)   # sorted in alphabetical order ['banana', 'lemon', 'mango', 'orange']
+fruits.sort(reverse=True)
+print(fruits)   # sorted in reverse ['orange', 'mango', 'lemon', 'banana']
+
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages)     # [19, 22, 24, 24, 24, 25, 25, 26]
+ages.sort(reverse=True)
+print(ages) # sorted in reverse
+
+# sorted(): returns the ordered list without modifying the original list
+fruits = ["banana", "orange", "mango", "lemon"]
+print(sorted(fruits))   # ['banana', 'lemon', 'mango', 'orange']
+
+# Reverse order
+fruits = sorted(fruits, reverse=True)
+print(fruits)   # ["orange", "mango", "lemon", "banana"]
