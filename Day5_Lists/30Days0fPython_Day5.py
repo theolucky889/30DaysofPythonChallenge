@@ -215,3 +215,41 @@ del lst         # deletes the whole list
 """
 
 fruits = ["banana", "orange", "mango", "lemon", "kiwi", "lime"]
+del fruits[0]
+print(fruits)       # ["orange", "mango", "lemon", "kiwi", "lime"]
+
+del fruits[1]
+print(fruits)       # ["orange", "lemon", "kiwi", "lime"]
+
+del fruits[1:3]     # this deletes items between the given indexes, so it won't delete the item with index 3
+print(fruits)       # ["orange", "lime"]
+
+"""del fruits
+print(fruits)       # This should give NameError: name 'fruits' is not defined"""
+
+# Clearing List Items
+# clear() method empties the list:
+
+# syntax
+"""
+lst = ["item1", "item2"]
+lst.clear()
+"""
+
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.clear()
+print(fruits)   # []
+
+# Copying a list
+"""
+It is possible to copy a list by reassigning it to a new variable in the following way:
+list2 = list1. Now, list2 is a reference of list1, any changes we make in list2 will also
+modify the original list, list1. But there are lots of case in which we no not like to modify
+the original. Insted, we like to have a different copy. One way of avoiding the problem above
+is using copy()
+"""
+
+# syntax
+lst = ["item1", "item2"]
+lst_copy = lst.copy()
+
