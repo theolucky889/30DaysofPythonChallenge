@@ -72,3 +72,30 @@ second_last = fruits[-2]
 print(first_fruit)
 print(last_fruit)
 print(second_last)
+
+# Unpacking List Items
+lst = ["item1", "item2", "item3", "item4", "item5"]
+first_item, second_item, third_item, *rest = lst
+print(first_item)       # item1
+print(second_item)      # item2
+print(third_item)       # item3
+print(rest)             # ["item4", "item5"]
+
+# First Example
+fruits = ["banana", "orange", "mango", "lemon", "lime", "apple"]
+first_fruit, second_fruit, third_fruit, *rest = fruits
+print(first_fruit)      # banana
+print(second_fruit)     # orange
+print(third_fruit)      # mango
+print(rest)             # ["lemon", "lime", "apple"]
+
+# Second Example about unpacking list
+first, second, third, *rest, tenth = [1,2,3,4,5,6,7,8,9,10]
+print(first)
+print(second)
+print(third)
+print(rest)
+print(tenth)
+
+# Third Example about unpacking list
+countries = []
