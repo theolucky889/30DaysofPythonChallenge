@@ -281,3 +281,4 @@ print(fruits_and_vegetables)    # ["banana", "orange", "mango", "lemon", "Tomato
 list1 = ["item1", "item2"]
 list2 = ["item3", "item4", "item5"]
 list1.extend(list2)
+print(list1)
