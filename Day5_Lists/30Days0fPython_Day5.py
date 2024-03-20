@@ -110,7 +110,7 @@ print(es)
 # Slicing Items from a List
 # - Positive indexing: We can specify a range of positive indexes by specifying the start, end and step,
 # the return value will be a new list. (default values for start = 0, end = len(lst) - 1(last item), step = 1)
-fruits = {"banana", "orange", "mango", "lemon"}
+fruits = ["banana", "orange", "mango", "lemon"]
 all_fruits = fruits[0:4]    # returns all the fruits
 # This will also give the same result as the one above
 all_fruits = fruits[0:]     # If we don't set where to stop, it takes all the rest
@@ -129,3 +129,12 @@ reverse_fruits = fruits[::-1]       # a negative step will take the list in reve
 # List is a mutable or modifiable ordered collection of items.
 fruits = ["banana", "orange", "mango", "lemon"]
 fruits[0] = "avocado"
+print(fruits)       # ["avocado", "orange", "mango", "lemon"]
+fruits[1] = "apple"
+print(fruits)       # ["avocado", "apple", "mango", "lemon"]
+last_index = len(fruits) - 1
+fruits[last_index] = "lime"
+print(fruits)       # ["avocado", "apple", "mango", "lime"]
+
+# Checking Items in a List
+# Checking an item if it is a member of a list using in operator
