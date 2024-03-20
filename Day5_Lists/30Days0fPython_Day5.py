@@ -156,3 +156,19 @@ print(fruits)           # ["banana", "orange", "mango", "lemon"]
 fruits.append("lime")
 print(fruits)           # ["banana", "orange", "mango", "lemon", lemon]
 
+# Inserting Items into a List
+# We can use insert() method to insert a single item at a specified index in a list.
+# Note that other items are shifted to the right. The insert() method takes two arguments: index and an item to insert
+
+# syntax
+"""
+lst = ["item1", "item2"]
+lst.insert(index, item)
+"""
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits.insert(2, "apple")       # insert apple between orange and mango
+print(fruits)                   # ["banana", "orange", "apple", "mango", "lemon"]
+fruits.insert(3, "lime")        # insert lime between apple and mango
+print(fruits)                   # ["banana", "orange", "apple", "lime", "mango", "lemon"]
+
+# Removing Items from a list
