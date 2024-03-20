@@ -138,3 +138,21 @@ print(fruits)       # ["avocado", "apple", "mango", "lime"]
 
 # Checking Items in a List
 # Checking an item if it is a member of a list using in operator
+fruits = ["banana", "orange", "mango", "lemon"]
+does_exist = "banana" in fruits
+print(does_exist)   # True
+does_exist = "lime" in fruits
+print(does_exist)   # False
+
+# Adding Items to a List
+# To add item to the end of an existing list we use the method append()
+# syntax
+"""
+lst = list()
+lst.append(item)
+"""
+fruits = ["banana", "orange", "mango", "lemon"]
+print(fruits)           # ["banana", "orange", "mango", "lemon"]
+fruits.append("lime")
+print(fruits)           # ["banana", "orange", "mango", "lemon", lemon]
+
