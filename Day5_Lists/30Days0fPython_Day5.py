@@ -300,3 +300,31 @@ fruits = ["banana", "orange", "mango", "lemon"]
 vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
 fruits.extend(vegetables)
 print("Fruits and Vegetables: ", fruits)
+
+# Counting Items in a List
+# count() method returns the number of times an item appears in a list
+
+# syntax
+"""
+lst = ["item1", "item2"]
+lst.count(item)
+"""
+
+fruits = ["banana", "orange", "mango", "lemon"]
+print(fruits.count("orange"))   # 1
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.count(24))   # 24
+
+# Finding Index of an Item
+# index() method returns the index of an item in the list
+
+# syntax
+"""
+lst = ["item1", "item2"]
+lst.index(item)
+"""
+
+fruits = ["banana", "orange", "mango", "lemon"]
+print(fruits.index("mango"))   # 2
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.index(24))   # 2, the first occurence
