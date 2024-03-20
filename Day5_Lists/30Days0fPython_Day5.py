@@ -253,3 +253,31 @@ is using copy()
 lst = ["item1", "item2"]
 lst_copy = lst.copy()
 
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits_copy = fruits.copy()
+print(fruits_copy)
+
+# Joining Lists
+# - Plus Operator (+)
+
+# syntax
+"""
+list3 = list1 + list2
+"""
+
+positive_numbers = [1, 2, 3, 4, 5]
+zero = [0]
+negative_numbers = [-5, -4, -3, -2, -1]
+integers = negative_numbers + zero + positive_numbers
+print(integers)     # [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+fruits = ["banana", "orange", "mango", "lemon"]
+vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
+fruits_and_vegetables = fruits + vegetables
+print(fruits_and_vegetables)    # ["banana", "orange", "mango", "lemon", "Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
+
+# - Joining using extend() method. extend() method allows to append list in a list
+
+# syntax
+list1 = ["item1", "item2"]
+list2 = ["item3", "item4", "item5"]
+list1.extend(list2)
