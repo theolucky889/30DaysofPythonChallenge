@@ -172,3 +172,16 @@ fruits.insert(3, "lime")        # insert lime between apple and mango
 print(fruits)                   # ["banana", "orange", "apple", "lime", "mango", "lemon"]
 
 # Removing Items from a list
+# The remove method removes a specified item from a list
+
+# syntax
+"""
+last = ["item1", "item2"]
+lst.remove(item)
+"""
+
+fruits = ["banana", "orange", "mango", "lemon", "banana"]
+fruits.remove("banana")
+print(fruits)               # ["banana", "orange", "mango", "lemon"] this method removes the first occurence of the item in the list
+fruits.remove("lemon")
+print(fruits)               # ["banana", "orange", "mango"]
