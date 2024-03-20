@@ -106,3 +106,26 @@ print(bg)
 print(sw)
 print(scandic)
 print(es)
+
+# Slicing Items from a List
+# - Positive indexing: We can specify a range of positive indexes by specifying the start, end and step,
+# the return value will be a new list. (default values for start = 0, end = len(lst) - 1(last item), step = 1)
+fruits = {"banana", "orange", "mango", "lemon"}
+all_fruits = fruits[0:4]    # returns all the fruits
+# This will also give the same result as the one above
+all_fruits = fruits[0:]     # If we don't set where to stop, it takes all the rest
+orange_and_mango = fruits[1:3]  # It does not include the first index
+orange_mango_lemon = fruits[1:]
+orange_and_lemon = fruits[::2]  # here we used a 3rd argument, step, it will take every 2nd item - ["banana", "mango"]
+
+# - Negative Indexing : We can specify a range of negative indexes by specifying the start, end and step, the return value will be a new list
+fruits = ["banana", "orange", "mango", "lemon"]
+all_fruits = fruits[-4:]    # returns all the fruits
+orange_and_mango = fruits[-3:-1]    # it does not include the last index, ["orange", "mango"]
+orange_mango_lemon = fruits[-3:]    # this will give starting from -3 to the end, ["orange", "mango", "lemon"]
+reverse_fruits = fruits[::-1]       # a negative step will take the list in reverse order, ["lemon", "orange", "mango", "lemon"]
+
+# Modifying lists
+# List is a mutable or modifiable ordered collection of items.
+fruits = ["banana", "orange", "mango", "lemon"]
+fruits[0] = "avocado"
