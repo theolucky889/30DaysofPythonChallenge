@@ -73,3 +73,11 @@ it_companies.reverse()
 print(it_companies)
 
 # 18. Slice out the first 3 companies from the list
+three_companies = it_companies[3:]
+print(three_companies)
+
+# 19. Slice out the last 3 companies from the list
+last_three_companies = it_companies[0:4]
+print(last_three_companies)
+
+# 20. Slice out the middle IT company or Companies from the list
