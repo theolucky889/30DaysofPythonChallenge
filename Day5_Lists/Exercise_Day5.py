@@ -81,3 +81,14 @@ last_three_companies = it_companies[0:4]
 print(last_three_companies)
 
 # 20. Slice out the middle IT company or Companies from the list
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+no_middle = it_companies[0:3] + it_companies[4:]
+print(no_middle)
+
+# 21. Remove the first IT company from the list
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+no_first = it_companies[1:7]
+print(no_first)
+
+# 22. Remove the middle IT company or companies from the list
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
