@@ -92,3 +92,34 @@ print(no_first)
 
 # 22. Remove the middle IT company or companies from the list
 it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+middle_index = len(it_companies) // 2  # This finds the middle index
+del it_companies[middle_index]  # This deletes the middle element
+print(it_companies)
+
+# 23. Remove the last IT company from the list
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+it_companies.pop()
+print(it_companies)
+
+# 24. Remove all IT companies from the list
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+it_companies.clear()
+print(it_companies)
+
+# 25. Destroy the IT companies list
+it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+it_companies.clear()
+print(it_companies)
+
+# 26. Join the Following lists:
+front_end = ["HTML", "CSS", "JS", "React", "Redux"]
+back_end = ["Node", "Express", "Mongodb"]
+front_end.extend(back_end)
+print(front_end)
+
+# 27. After joining the list in #26. Copy the joined list and assign it to a variable full_stack then insert Python and SQL after Redux
+full_stack = front_end + back_end
+full_stack_copy = full_stack.copy()
+full_stack_copy.insert(5, "Python")
+full_stack_copy.insert(6, "SQL")
+print(full_stack_copy)
