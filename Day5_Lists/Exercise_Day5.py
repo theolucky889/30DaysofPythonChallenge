@@ -124,4 +124,56 @@ full_stack_copy.insert(5, "Python")
 full_stack_copy.insert(6, "SQL")
 print(full_stack_copy)
 
-#
+# Exercise 2
+"""
+1. The following is a list of 10 student ages:
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+- Sort the list and find the min and max age
+- add the min age and the mage again to the list
+- FInd the median age
+- Find the average age
+- Find the range of the ages (max minus min)
+- Compare the value of (min - average) and (max - average), use abs() method
+"""
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages)     # 1
+
+min_age = min(ages)
+max_age = max(ages)
+ages.append(min_age)
+ages.append(max_age)
+print(ages)     # 2
+
+def median(ages):
+    sorted_ages = sorted(ages)
+    n = len(sorted_ages)
+    
+    if n % 2 == 1:
+        return sorted_ages[n // 2]
+    else:
+        mid1 = sorted_ages[n // 2]
+        mid2 = sorted_ages[n // 2]
+        return (mid1 + mid2) / 2
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+median_age = median(ages)
+print(median_age)       # 3
+
+total_ages = sum(ages)
+average_ages = total_ages / len(ages)
+print(average_ages)     # 4
+
+range_ages = max_age - min_age
+print(range_ages)       # 5
+
+min_average = min_age - average_ages
+max_average = max_age - average_ages
+abs_min_ages = abs(min_average)
+abs_max_ages = abs(max_average)
+print(abs_max_ages)
+print(abs_min_ages)
+
+# 2. Find the middle countries in the countries list
+
+
