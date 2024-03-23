@@ -175,5 +175,32 @@ print(abs_max_ages)
 print(abs_min_ages)
 
 # 2. Find the middle countries in the countries list
+countries = ["USA", "Indonesia", "Taiwan", "China", "Malaysia", "Germany"]
+countries.sort()
 
+length_countries = len(countries)
+if length_countries & 2 == 1:
+    middle_country = countries[length_countries // 2]
+    print(middle_country)
+else:
+    middle_country = countries[length_countries // 2 - 1 : length_countries // 2 + 1]
+    print(middle_country)
 
+# 3. Divide the countries list into two equal lists if it is even, if not, one more country for the first half
+countries = ["USA", "Indonesia", "Taiwan", "China", "Malaysia", "Germany"]
+countries.sort()
+
+length_countries = len(countries)
+mid_country = length_countries // 2 + length_countries % 2
+first_half = countries[:mid_country]
+second_half = countries[mid_country:]
+print(first_half)
+print(second_half)
+
+# 4. ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+# Unpack the first three countries and the rest as scandic countries
+countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+fight_countries = countries[0:3]
+scandic_countries = countries[3:7]
+print(fight_countries)
+print(scandic_countries) 
