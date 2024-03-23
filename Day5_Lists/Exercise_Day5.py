@@ -123,3 +123,5 @@ full_stack_copy = full_stack.copy()
 full_stack_copy.insert(5, "Python")
 full_stack_copy.insert(6, "SQL")
 print(full_stack_copy)
+
+#
