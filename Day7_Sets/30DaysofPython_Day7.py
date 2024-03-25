@@ -62,3 +62,8 @@ vegetables = ('tomato', 'potato', 'cabbage', 'onion', 'carrot')
 fruits.update(vegetables)
 print(fruits)
 
+# Removing items from a set
+"""We can remove an item from a set using remove() method. If
+the item is not found, remove() method will raise errors, so
+it is good to check if the item exist in the given set.
+However, discard() method doesn't raise any errors."""
