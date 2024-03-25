@@ -32,3 +32,33 @@ print(fruits_length)
 
 # Checking an Item
 # To check if an item exist in a list, we use in membership operator
+st = {'item1', 'item2', 'item3', 'item4'}
+print("Does set st contain item3?", 'item3' in st)
+
+# Example:
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+print('mango' in fruits)
+
+# Adding Items to a set
+# Once a set is created, we cannot change any items and we can also add additional items.
+
+# - Add one item using add()
+st = {'item1', 'item2', 'item3', 'item4'}
+st.add('item5')
+
+# Example:
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.add('lime')
+print(fruits)
+
+# - Add multiple items using update(). THe update() allows to add multiple items to a set.
+# The update() takes a list argument
+st = {'item1', 'item2', 'item3', 'item4'}
+st.update(['item5', 'item5', 'item6']) 
+
+# Example:
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = ('tomato', 'potato', 'cabbage', 'onion', 'carrot')
+fruits.update(vegetables)
+print(fruits)
+
