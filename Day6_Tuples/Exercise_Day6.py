@@ -39,5 +39,33 @@ animal_products = ("leash", "cage", "dog_food", "cat_food")
 
 food_stuff_tp = fruits + vegetables + animal_products
 
-# 2. Change the about food_stuff_tp tuple to a food_stuff_lt list
+# 3. Change the about food_stuff_tp tuple to a food_stuff_lt list
 food_stuff_lt = list(food_stuff_tp)
+
+# 4. Slice out the middle item or items from the tuple/list
+length = len(food_stuff_lt)
+middle_index = length // 2
+if length % 2 == 0 :
+    del food_stuff_lt[middle_index - 1:middle_index + 1]
+else:
+    del food_stuff_lt[middle_index]
+    
+print(food_stuff_lt)
+
+# 5. Slice out the first three items and the last three items from food_staff_lt list
+del food_stuff_lt[:3]
+del food_stuff_lt[3:]
+print(food_stuff_lt)
+
+# 6. Delete the food_stuff_tp completely
+# del food_stuff_lt
+# del food_stuff_tp
+# print(food_stuff_lt)
+# print(food_stuff_tp)
+
+"""7. Check if an item exists in tuple:
+- Check if "Estonia" is a nordic country
+- Check if "Iceland" is a nordic country
+"""
+
+nordic_countries = ("Denmark", "Finland", "Iceland", "Norway", "Sweden")
