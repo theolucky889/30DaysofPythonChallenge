@@ -144,3 +144,112 @@ vegetables = {'tomato', 'potato', 'cabbage', 'onion', 'carrot'}
 fruits.update(vegetables)
 print(fruits)
 
+# Finding intersection items
+# Intersection returns a set of items which are in both the sets
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item3', 'item2'}
+
+# Example:
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+intersection_numbers = whole_numbers.intersection(even_numbers)
+print(intersection_numbers)
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+intersection_letters = python.intersection(dragon)
+print(intersection_letters)
+
+# Checking Subset and Super Set
+# A set can be a subset or super set of other sets:
+# - Subset: issubset()
+# - Super Set: issuperset()
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+subset = st2.issubset(st1)
+superset = st1.issuperset(st2)
+print(subset)
+print(superset)
+
+# Example
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8 ,10}
+subset = whole_numbers.issubset(even_numbers)
+superset = whole_numbers.issuperset(even_numbers)
+print(subset)
+print(superset)
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+subset = python.issubset(dragon)
+superset = dragon.issuperset(python)
+print(subset)
+print(superset)
+
+# Checking the difference between two sets
+# It returns the difference between two sets
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2_difference = st2.difference(st1)
+st1_difference = st1.difference(st2)
+print(st1_difference)
+print(st2_difference)
+
+# Example:
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8 ,10}
+whole_differences = whole_numbers.difference(even_numbers)
+print(whole_differences)
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+python_difference = python.difference(dragon)
+dragon_difference = dragon.difference(python)
+
+# Finding Symmetric Difference Between Two Sets
+# It returns the symmetric difference between two sets.
+# IT means that it returns a set that contains all items from both sets
+# Expect items that are present in both sets mathematically: (A\B) ∪ (B\A)
+
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+# it means (A\B)∪(B\A)
+st2.symmetric_difference(st1)
+
+# Example:
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+some_numbers = {1, 2, 3, 4, 5}
+number_symetric = whole_numbers.symmetric_difference(some_numbers)
+print(number_symetric)
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+letter_symetric = python.symmetric_difference(dragon)
+print(letter_symetric)
+
+# Joining Sets
+"""If two sets do not have a common item or items we call them disjoint
+sets. We can check if two sets are joint or disjoint using
+isdisjoint() method"""
+
+# syntax 
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2.isdisjoint(st1)
+
+# Example:
+even_numbers = {0, 2, 4, 6, 8}
+odd_numbers = {1, 3, 5, 7, 9}
+even_odd = even_numbers.isdisjoint(odd_numbers)
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
+python_dragon = python.isdisjoint(dragon)
+print(python_dragon)
