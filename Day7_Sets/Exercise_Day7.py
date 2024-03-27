@@ -10,3 +10,6 @@ age = [22, 19, 24, 25, 26, 24, 25, 24]
 companies_length = len(it_companies)
 print(companies_length)
 
+# 2. Add 'Twitter' to it_companies
+it_companies.append('Twitter')
+print(it_companies)
