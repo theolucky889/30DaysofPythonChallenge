@@ -248,6 +248,7 @@ st2.isdisjoint(st1)
 even_numbers = {0, 2, 4, 6, 8}
 odd_numbers = {1, 3, 5, 7, 9}
 even_odd = even_numbers.isdisjoint(odd_numbers)
+print(even_odd)
 
 python = {'p', 'y', 't', 'h', 'o', 'n'}
 dragon = {'d', 'r', 'a', 'g', 'o', 'n'}
