@@ -202,3 +202,31 @@ print(dct.clear())  # None
 
 # Deleting a Dictionary
 # if we do not use the dictionary we can delete it completely
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+del dct
+
+# Copy a dictionary
+# We can copy a dictionary using copy() method. Using copy we can avoid mutation of the original dictionary
+
+# synatx
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct_copy = dct.copy()
+print(dct_copy)
+
+# Getting Dictionary keys as a list
+# keys() method gives us all the keys of a dictionary as a list
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+keys = dct.keys()
+print(keys)     # dict_keys(['key1', 'key2', 'key3', 'key4'])
+
+# Getting Dictionary values as a list
+# The values() method gives us all the values of a dictionary as a list
+
+# syntax
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+values = dct.values()
+print(values)
