@@ -46,3 +46,96 @@ else:
 # THe condition above proves false, therefore the else block was executed.
 
 # How about if our condition is more than two? We can use __elif__
+
+# if elif else
+"""
+In our daily life, we make decision on daily basis. We make decision not by checking one or
+two conditions but multiple conditions. As similar to life, programming is also full of conditions.
+We use elif when we have multiple conditions
+"""
+# syntax
+"""
+if condition:
+    code
+elif condition:
+    code
+else:
+    code
+"""
+# Example
+a = 0
+if a > 0:
+    print('A is a positive number')
+elif a < 0:
+    print('A is a negative number')
+else:
+    print('A is zero')
+
+# Short hand
+
+# syntax
+"""
+code if condition else code
+"""
+# Example
+a = 3
+print('A is positive') if a > 0 else print('A is negative') # if first condition is met, 'A is positive' will be printed
+
+# Nested Conditions
+# Conditions can be nested
+
+# syntax
+"""
+if condition:
+    code
+    if condition:
+    code
+"""
+# Example
+a = 0
+if a > 0:
+    if a % 2 == 0:
+        print('A is a positive and even integer')
+    else:
+        print('A is a positive numnber')
+elif a == 0:
+    print('A is zero')
+else:
+    print('A is a negative number')
+# WE can avoid writing nested condition by using logical operator and
+
+# If condition and logical operators
+
+# syntax
+"""
+if condition and condition:
+    code
+"""
+
+# Example
+a = 0
+if a > 0 and a % 2 == 0:
+    print('A is an even and positive integer')
+elif a > 0 and a % 2 != 0:
+    print('A is a positive integer')
+elif a == 0:
+    print('A is zero')
+else:
+    print('A is negative')
+
+# If and Or Logical Operators
+
+# syntax
+"""
+if condition or condition:
+    code
+"""
+# Example:
+user = 'Theodore'
+access_level = 3
+if user == 'admin' or access_level >= 4:
+    print('Access Granted!')
+else:
+    print('Access Denied!')
+
+
