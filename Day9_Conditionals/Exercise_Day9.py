@@ -50,3 +50,48 @@ Enter number one: 4
 Enter number two: 3
 4 is greater than 3
 """
+number_one = int(input("Enter number one: "))
+number_two = int(input("Enter number two: "))
+if number_one > number_two:
+    print(f"{number_one} is greater than {number_two}")
+elif number_one < number_two:
+    print(f"{number_two} is greater than {number_one}")
+else:
+    print(f"{number_one} is equal to {number_two}")
+    
+# Exercise Level 2
+
+# 1. Write a code which gives grade to students according to their scores:
+"""
+80-100, A
+70-89, B
+60-69, C
+50-59, D
+0-49, F
+"""
+grading_score = int(input("Please Enter your score in numbers: "))
+if 80 <= grading_score <= 100:
+    print("A")
+elif 70 <= grading_score <= 89:
+    print("B")
+elif 60 <= grading_score <= 69:
+    print("C")
+elif 50 <= grading_score <= 59:
+    print("D")
+else:
+    print("F")
+    
+# 2. Check if the season is Autumn, Winter, Spring or summer. If the user input is:
+# september, october, november, the season is autumn
+# December, january, february is winter
+# march, april, may is spring
+# June, july, august is summer
+month_seasons = input("Enter a month: ")
+if month_seasons == 'september' or 'october' or 'november':
+    print("Autumn")
+elif month_seasons == 'december' or 'january' or 'february':
+    print("Winter")
+elif month_seasons == 'march' or 'april' or 'may':
+    print("Spring")
+elif month_seasons == 'june' or 'july' or 'august':
+    print("Summer")
