@@ -38,7 +38,7 @@ elif your_age < my_age:
     if age_diff == 1:
         print(f"You are {your_age - my_age} year younger than me")
     else:
-        print(f"You are {your_age - my_age} years older than me")
+        print(f"You are {your_age - my_age} years younger than me")
 else:
     print("We have the same age")
 
