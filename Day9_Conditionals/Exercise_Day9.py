@@ -27,17 +27,26 @@ You are 5 years older than 5
 """ 
 my_age = 22
 your_age = int(input("Enter your age: "))
-if your_age > 22:
-   if my_age - your_age == 1:
+if your_age > my_age:
+    age_diff = your_age - your_age
+    if age_diff == 1:
        print(f"You are {my_age - your_age} year older than me")
     else:
         print(f"You are {my_age - your_age} years older than me")
-if your_age < 22:
-    if your_age - my_age == 1:
+elif your_age < my_age:
+    age_diff = my_age - your_age
+    if age_diff == 1:
         print(f"You are {your_age - my_age} year younger than me")
     else:
         print(f"You are {your_age - my_age} years older than me")
-elif my_age == your_age:
+else:
     print("We have the same age")
 
-    
+# 3. Get two numbers from the user using input prompt. If a is greater than b, return 
+# a is greater than b, if a is less than b, return a is smaller than b, else a is equal to b
+# Output:
+"""
+Enter number one: 4
+Enter number two: 3
+4 is greater than 3
+"""
