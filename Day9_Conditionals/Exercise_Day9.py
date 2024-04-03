@@ -30,15 +30,15 @@ your_age = int(input("Enter your age: "))
 if your_age > my_age:
     age_diff = your_age - your_age
     if age_diff == 1:
-       print(f"You are {my_age - your_age} year older than me")
+       print(f"You are {your_age - your_age} year older than me")
     else:
-        print(f"You are {my_age - your_age} years older than me")
+        print(f"You are {your_age - your_age} years older than me")
 elif your_age < my_age:
     age_diff = my_age - your_age
     if age_diff == 1:
-        print(f"You are {your_age - my_age} year younger than me")
+        print(f"You are {my_age - your_age} year younger than me")
     else:
-        print(f"You are {your_age - my_age} years younger than me")
+        print(f"You are {my_age - your_age} years younger than me")
 else:
     print("We have the same age")
 
@@ -86,12 +86,27 @@ else:
 # December, january, february is winter
 # march, april, may is spring
 # June, july, august is summer
-month_seasons = input("Enter a month: ")
-if month_seasons == 'september' or 'october' or 'november':
+month_seasons = input("Enter a month: ").lower()
+if month_seasons == 'september' or month_seasons == 'october' or month_seasons == 'november':
     print("Autumn")
-elif month_seasons == 'december' or 'january' or 'february':
+elif month_seasons == 'december' or month_seasons == 'january' or month_seasons == 'february':
     print("Winter")
-elif month_seasons == 'march' or 'april' or 'may':
+elif month_seasons == 'march' or month_seasons == 'april' or month_seasons == 'may':
     print("Spring")
-elif month_seasons == 'june' or 'july' or 'august':
+elif month_seasons == 'june' or month_seasons == 'july' or month_seasons == 'august':
     print("Summer")
+else: 
+    print("Invalid Month")
+
+# 3. The following list contains some fruits:
+fruits = ['banana', 'orange', 'mango', 'lemon']
+# If a fruits doesn't exist in the list, add the fruit to the list and print the modified list
+# IF the fruits exists print('That fruit already exist in the list')
+fruit_input = input("Enter a fruit: ")
+if fruit_input == fruits:
+    print("That fruit is already exist in the list")
+    print(fruits)
+else:
+    print(f"{fruit_input} Added to the list")
+    fruits.append(fruit_input)
+    print("Updated fruit list: ", fruits)
