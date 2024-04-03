@@ -137,3 +137,28 @@ person = {
   - If the person is not married and if he lives in taiwan print the following format:
   Theodore Lucky Tendy lives in Taiwan. He is not married
 """
+def analyze_person(person):
+    if 'skills' in person and person['skills']:
+        skills = person['skills']
+        middle_index = len(skills) // 2
+        middle_skill = skills[middle_index - 1] if len(skills) % 2 == 0 else skills[middle_index]
+        print(f'The middle skill is: {middle_skill}')
+        
+        if 'Python' in skills:
+            print('This person has python skill')
+        
+        if set(['Javascript', 'React']).issubset(skills):
+            print('He is a front end developer')
+        elif set(['Selenium', 'Python']).issubset(skills):
+            print(['He is a software testing engineer'])
+        elif set(['Node', 'React', 'MongoDB']).issubset(skills):
+            print('He is a fullstack developer')
+        else:
+            print('Unknown Title')
+    else:
+        print('No skills found')
+    
+    if not person['is_married'] and person['country'].lower() == 'taiwan':
+        print(f'{person['first_name']} {person['last_name']} lives in Taiwan. He is not married')
+        
+analyze_person(person)
