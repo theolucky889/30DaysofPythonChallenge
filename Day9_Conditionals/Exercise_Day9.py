@@ -30,15 +30,15 @@ your_age = int(input("Enter your age: "))
 if your_age > my_age:
     age_diff = your_age - your_age
     if age_diff == 1:
-       print(f"You are {your_age - your_age} year older than me")
+       print(f"You are {age_diff} year older than me")
     else:
-        print(f"You are {your_age - your_age} years older than me")
+        print(f"You are {age_diff} years older than me")
 elif your_age < my_age:
     age_diff = my_age - your_age
     if age_diff == 1:
-        print(f"You are {my_age - your_age} year younger than me")
+        print(f"You are {age_diff} year younger than me")
     else:
-        print(f"You are {my_age - your_age} years younger than me")
+        print(f"You are {age_diff} years younger than me")
 else:
     print("We have the same age")
 
@@ -110,3 +110,10 @@ else:
     print(f"{fruit_input} Added to the list")
     fruits.append(fruit_input)
     print("Updated fruit list: ", fruits)
+    
+# Exercise Level 3
+
+# 1. Here we have a person dictionary
+person = {
+    
+}
