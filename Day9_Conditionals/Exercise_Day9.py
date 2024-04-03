@@ -115,5 +115,25 @@ else:
 
 # 1. Here we have a person dictionary
 person = {
-    
+    'first_name':'Theodore Lucky',
+    'last_name':'Tendy',
+    'age':22,
+    'country':'Taiwan',
+    'is_married':False,
+    'skills':['Python', 'Selenium', 'React', 'Javascript'],
+    'address':{
+        'street':'Taiyuan Street',
+        'zipcode':103
+    }
 }
+"""
+- Check if the person dictionary has skills key, if so, print out the middle skill in the skills list
+- Check if the person dictionary has skills key, if so, check if the person has 'Python' skill and print
+- If the person skills has only javascript and react, print('He is a front end developer'),
+  If the person skills has selenium, python, azure print ('He is a software testing engineer').
+  if the person skills has react, node and mongodb, print ('He is a fullstack developer')
+  else, print('unknown title')
+  for more accurate results more conditions can be nested
+  - If the person is not married and if he lives in taiwan print the following format:
+  Theodore Lucky Tendy lives in Taiwan. He is not married
+"""
