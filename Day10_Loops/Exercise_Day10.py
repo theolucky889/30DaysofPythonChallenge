@@ -104,3 +104,51 @@ for numbers in range(101):
         total_odd += numbers
 print('The sum of all evens is ', total_even)
 print('The sum of all odds is ', total_odd)
+
+# Exercises level 3
+# 1. Go to the data folder and use the countrie.py file.
+# Loop through the countries and extract all the countries containing the word 'land'
+from countries import countries
+
+for country in countries:
+    if 'land' in country:
+        print(country)
+
+# 2. THis is a fruit list, reverse the order using loop
+fruits = ['banana', 'orange', 'mango', 'lemon']
+for fruits in reversed(fruits):
+    print(fruits)
+    
+# 3. Go to the data folder and use the countries_data.py file
+# i. What are the total number of languages in the data
+
+
+from countries_data import countries_data
+
+unique_language = set()
+
+for country in countries_data:
+    for language in country['languages']:
+        unique_language.add(language)
+print('Total number of languages: ', len(unique_language))
+
+# ii. Find the ten most spoken language from the data
+
+all_languages = [language for country in countries_data for language in country['languages']]
+
+sorted_languages = sorted(set(all_languages), key=lambda x: all_languages.count(x), reverse=True)
+
+top_ten_languages = sorted_languages[:10]
+print('Top ten most used languages:')
+for language in top_ten_languages:
+    print(language)
+
+
+
+# iii. Find the 10 most populator countries in the world
+most_populated = sorted(countries_data, key=lambda x: x['population'], reverse=True)
+
+top_ten_populated = most_populated[:10]
+print('Top 10 most populated countries: ')
+for country in top_ten_populated:
+    print(f'{country['name']}: {country['population']}')
