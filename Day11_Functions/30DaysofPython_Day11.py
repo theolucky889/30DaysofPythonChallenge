@@ -91,3 +91,14 @@ print(sum_of_numbers(100))
 A function may or may not have a parameter or parameters. A function may also have two or more
 parameters. If our function takes parameters, we should call it with arguments. 
 """
+
+# syntax
+# Declaring a function
+"""
+def function_name(para1, para2):
+    codes
+    codes
+# Calling a function
+print(function_name(arg1, arg2))
+"""
+# Example:
