@@ -154,3 +154,51 @@ To return a value with a function, we use the keyword return followed by the var
 We can return any kind of data types from a function
 """
 # - Returning a string: Example
+def print_name(firstname):
+    return firstname
+print_name('Theodore Lucky')
+
+def print_fullname(firstname, lastname):
+    space = ' '
+    fullname = firstname + space + lastname
+    return fullname
+print_fullname(firstname = 'Theodore Lucky', lastname = 'Tendy')
+
+# - Returning a Number:
+# Example
+def add_two_numbers(num1, num2):
+    total = num1 + num2
+    return total
+print(add_two_numbers(2, 34))
+
+def calculate_age(current_year, birth_year):
+    age = current_year - birth_year
+    return age
+print('Age: ', calculate_age(2024, 2002))
+
+# - Returning a boolean
+# Example: 
+def is_even(n):
+    if n % 2 == 0:
+        print('even')
+        return True     # return stops further execution of the function, similar to break
+    return False
+print(is_even(10))  # True
+print(is_even(7))   # False
+
+# Returning a list: Example:
+def find_even_numbers(n):
+    even = []
+    for i in range(n + 1):
+        if i % 2 == 0:
+            even.append(i)
+    return even
+print(find_even_numbers(10))
+
+# Function with Default Parameters
+"""
+Sometimes we pass default values to parameters, when we invoke the function. If we do not pass arguments
+when calling the function, their default values will be used.
+"""
+# syntax
+# Declaring a function
