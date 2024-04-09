@@ -202,3 +202,74 @@ when calling the function, their default values will be used.
 """
 # syntax
 # Declaring a function
+"""
+def function_name(param = value):
+    code
+    code
+# Calling function
+function_name()
+function_name(arg)
+"""
+# Example
+def greetings(name = 'Theodore'):
+    message = name + ', welcome to Python for Everyone!'
+    return message
+print(greetings())
+print(greetings('Lucky'))
+
+def generate_fullname(firstname = 'Theodore Lucky', lastname = 'Tendy'):
+    space = ' '
+    fullname = firstname + space + lastname
+    return fullname
+print(generate_fullname())
+print(generate_fullname('Joesline', 'Suryadi'))
+
+def calculate_age(birth_year, current_year = 2024):
+    age = current_year - birth_year
+    return age
+print('Age: ', calculate_age(2002))
+
+def weight_of_object(mass, gravity = 9.81):
+    weight = str(mass * gravity) + ' N'
+    return weight
+print('Weight of an object in Newtons: ', weight_of_object(100))    # earth gravity = 9.81
+print('Weight of an object in Newtons: ', weight_of_object(100, 1.62))  # moon gravity = 1.62
+
+# Arbitary Number of Arguments
+"""
+If we do not know the number of arguments we pass to our function, we can create a function
+which can take arbitrary number of arguments by adding * before the parameter name.
+"""
+# syntax
+# Declaring a function
+"""
+def function_name(*args):
+    code
+    code
+# Calling function
+function_name(param1, param2, param3, ....)
+"""
+
+# Example
+def sum_all_nums(*nums):
+    total = 0
+    for num in nums:
+        total += num    # same as total = total + num
+    return total
+print(sum_all_nums(2, 3, 5))    # 10
+
+# Default and Arbitrary Number of Parameters in Functions
+def generate_groups(team, *args):
+    print(team)
+    for i in args:
+        print(i)
+generate_groups('Team-1', 'Theodore', 'Joesline', 'Edison', 'David')
+
+# Function as a Parameter of Another Function
+# You can pass functions around as parameters
+def square_number(n):
+    return n * n
+def do_something(f, x):
+    return f(x)
+print(do_something(square_number, 3))   # 9
+
