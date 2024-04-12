@@ -49,4 +49,65 @@ print(season_check(months))
 
 # 6. Write a function called calculate_slope which return the slope of a linear equation
 def calculate_slope(linear_eq):
+    rhs = linear_eq.split('=')[1]
     
+    if 'x' not in rhs:
+        return 0
+    slope_part = rhs.split('x')[0].strip()
+    
+    if slope_part == '' or slope_part =='+':
+        return 1
+    elif slope_part == '-':
+        return -1
+    return float(slope_part)
+
+print(calculate_slope('y = 2x + 3'))
+print(calculate_slope('y = -x - 5'))
+print(calculate_slope('y = x'))
+print(calculate_slope('y = 3x + 2'))
+
+# 7. Quadratic Equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn
+def solve_quadratic_eqn(a, b, c):
+    discriminant = b**2 - 4*a*c
+    
+    if discriminant > 0:
+        x1 = (-b + discriminant**0.5) / (2*a)
+        x2 = (-b - discriminant**0.5) / (2*a)
+        return(x1, x2)
+    elif discriminant == 0:
+        x = -b / (2*a)
+        return(x)
+    else:
+        real_part = -b / (2*a)
+        imaginary_part = (abs(discriminant)**0.5) / (2*a)
+        return (real_part + imaginary_part*1j, real_part - imaginary_part*1j)
+print(solve_quadratic_eqn(1, -3, 2))
+print(solve_quadratic_eqn(1, 2, 1))
+print(solve_quadratic_eqn(1, 0, 1))
+
+# 8. Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list
+def print_list(lst):
+    for element in lst:
+        print(element)
+    
+my_list = [1, 2, 3, 4, 5, 'a', 'b', 'c']
+print_list(my_list)
+
+# 9. Declare a function named reverse_list. IT takes an array as a parameter and it returns the reverse of the array(use loops)
+'''
+print(reverse_list([1, 2, 3, 4, 5]))
+# [5, 4, 3, 2, 1]
+print(reverse_list1(['A', 'B', 'C']))
+# ['C', 'B', 'A']
+'''
+def reverse_list(arry):
+    reversed_array = []
+    
+    for i in range(len(arry) -1, -1, -1):
+        reversed_array.append(arry[i])
+    return reversed_array
+
+print(reverse_list([1, 2, 3, 4, 5]))
+print(reverse_list(['A', 'B', 'C']))
+
+# 10. 
