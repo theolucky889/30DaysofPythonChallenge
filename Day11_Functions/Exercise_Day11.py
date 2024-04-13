@@ -110,4 +110,51 @@ def reverse_list(arry):
 print(reverse_list([1, 2, 3, 4, 5]))
 print(reverse_list(['A', 'B', 'C']))
 
-# 10. 
+# 10. Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+def capitalize_list_item(cap_lst):
+    capitalized_list = []
+    for items in cap_lst:
+        capitalized_list.append(items.upper())
+    return capitalized_list
+
+lst_capital = ['hello', 'python', 'sqa', 'viewsonic']
+capitalized_items = capitalize_list_item(lst_capital)
+print(capitalized_items)
+
+# 11. Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end
+'''
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(add_item(food_staff, 'Meat'))     # ['Potato', 'Tomato', 'Mango', 'Milk','Meat'];
+numbers = [2, 3, 7, 9];
+print(add_item(numbers, 5))      [2, 3, 7, 9, 5]
+'''
+def add_item(item_add, items):
+
+    item_add.append(items)
+    return item_add
+
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_staff, 'Meat'))
+
+numbers = [2, 3, 7, 9]
+print(add_item(numbers, 5))
+
+# 12. Declare a function named remove_item. It takes a list and an item parameter. It returns a list with the item removed from it
+'''
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(remove_item(food_staff, 'Mango'))  # ['Potato', 'Tomato', 'Milk'];
+numbers = [2, 3, 7, 9];
+print(remove_item(numbers, 3))  # [2, 7, 9]
+'''
+def remove_item(item_remove, items):
+    item_remove.remove(items)
+    return item_remove
+
+food_staff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_staff, 'Mango'))
+
+numbers = [2, 3, 7, 9]
+print(remove_item(numbers, 3))
+
+# 13. Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range
+
