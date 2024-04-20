@@ -30,3 +30,27 @@ print(Person)   # <__main__.Person object at 0x10804e510>
 # We can create an object by calling the class
 p = Person()
 print(p)
+
+# Class Constructor
+'''
+In the examples above, we have created an object from the Person class. However, a class without
+a constructor is not really useful in real applications. Let us use constructor function to make
+our class more useful. Like the constructor function in Java or JavaScript. Python has also 
+built-in init() construction function. the init constructor function has self parameter
+which is a reference to the current instance of the class
+Example:
+'''
+class Person:
+    def __init__(self, name):
+        # self allows to attach parameter to the class
+        self.name = name
+        
+p = Person('Lucky')
+print(p.name)
+print(p)
+
+# output
+'''
+Lucky
+<__main__.Person object at 0x00000295C755B1A0>
+'''
