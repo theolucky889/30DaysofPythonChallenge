@@ -77,7 +77,7 @@ print('Mode: ', stats.mode) # {'mode': 26, 'count': 5}
 print('Standard Deviation: ', stats.standarddeviation) # 4.2
 print('Variance: ', stats.variance) # 17.5
 print('Frequency Distribution: ', stats.frequencydistribution) # [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
-print(stats.describe())
+
 '''
 # statistics_module.py
 
