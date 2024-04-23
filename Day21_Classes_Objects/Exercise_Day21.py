@@ -174,14 +174,15 @@ class PersonAccount:
         self.incomes = {}
         self.expenses = {}
     
-    
-    def add_income(self, amount, desc):
-        desc = input('Enter a description for your income: ')
-        amount = float(input('Enter the amount for the income: '))
+    def add_income(self):
+        desc = input('Enter a description for your Income: ')
+        amount = float(input('Enter the amount for the Income: '))
         self.incomes[desc] = self.incomes.get(desc, 0) + amount
         print(f'Income Added: {desc}, {amount: .2f}')
         
-    def add_expenses(self, amount, desc):
+    def add_expenses(self):
+        desc = input('Enter a description for your  Expense: ')
+        amount = float(input('Enter the amount for the Expense: '))
         self.expenses[desc] = self.expenses.get(desc, 0) - amount
 
     def total_income(self):
@@ -191,10 +192,18 @@ class PersonAccount:
         return sum(self.expenses.values())
     
     def account_balance(self):
-        return self.total_income() - self.total_expenses
+        return self.total_income() - self.total_expenses()
     
     def account_info(self):
         return f'{self.firstname} {self.lastname} has an account balance of ${self.account_balance():.2f}'
     
+    def display_summary(self):
+        print('Financial Summary: ')
+        print(f'Total Income: ${self.total_income():.2f}')
+        print(f'Total Expense: ${self.total_expenses():.2f}')
+        print(self.account_info())
+        
 account = PersonAccount('Theodore Lucky', 'Tendy')
-input(account.add_income()
+account.add_income()
+account.add_expenses()
+account.display_summary()
