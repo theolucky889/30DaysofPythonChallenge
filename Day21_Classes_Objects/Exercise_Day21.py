@@ -168,5 +168,16 @@ methods. Income is a set of incomes and its description. The same goes for expen
 '''
 
 class PersonAccount:
-    def __init__(self, account):
+    def __init__(self, account, firstname, lastname, expenses):
         self.account = account
+        self.firstname = firstname
+        self.lastname = lastname
+        self.expenses = self.account - self.expenses
+    
+    
+    def incomes(self, desc):
+        income = self.account + self.incomes
+        return(f'Your Total income is {income}')
+    
+    def expense_prop(self, total_income, total_expense, account_info, add_income, add_expense, account_balance):
+        
