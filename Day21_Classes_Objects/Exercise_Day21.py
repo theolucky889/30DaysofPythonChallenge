@@ -203,7 +203,45 @@ class PersonAccount:
         print(f'Total Expense: ${self.total_expenses():.2f}')
         print(self.account_info())
         
-account = PersonAccount('Theodore Lucky', 'Tendy')
-account.add_income()
-account.add_expenses()
-account.display_summary()
+# account = PersonAccount('Theodore Lucky', 'Tendy')
+# account.add_income()
+# account.add_expenses()
+# account.display_summary()
+
+class AccountManager:
+    def __init__(self):
+        self.accounts = []
+        self.current_account = None
+        
+    def user_name(self):
+        firstname = input('Enter your Firstname: ')
+        lastname = input('Enter your lastname: ')
+        return firstname, lastname
+    
+    def find_or_create(self, firstname, lastname):
+        for account in self.accounts:
+            if account.firstname == firstname and account.lastname == lastname:
+                return account
+        new_account = PersonAccount(firstname, lastname)
+        self.accounts.append(new_account)
+        print(f'Account created for {firstname} {lastname}')
+        return new_account
+    
+    def money_manager(self):
+        firstname, lastname = self.user_name()
+        self.current_account = self.find_or_create(firstname, lastname)
+        while True:
+            print('\nWould you like to add an Income or an Expense? (Type "income", "expense", "exit")')
+            choice = input().lower()
+            if choice == 'income':
+                self.current_account.add_income()
+            elif choice == 'expense':
+                self.current_account.add_expenses()
+            elif choice == 'exit':
+                print('Program Closed')
+                break
+            else:
+                print('Invalid Input, please enter the correct keyword')
+                
+money = AccountManager()
+money.money_manager()
