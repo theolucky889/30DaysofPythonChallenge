@@ -40,3 +40,16 @@ def rgb_color_gen():
 
 print(rgb_color_gen())
 # rgb(125, 244, 255)
+
+# Exercise Level 2
+'''
+1. Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array
+(six decimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9
+and first 6 letters of the alphabet, a-f. Check the task 6 for output examples)
+2. Write a function list_of_rgb_colors which returns any number of RGB colors in an array
+3. Write a function generate_colors which can generate any number of hexa or rgb colors
+'''
+
+def list_of_hexa_colors(n):
+    hex_chars = '0123456789abcdef'
+    return ['#' + ''.join(choices(hex_chars, k=6))for _ in range(n)]
