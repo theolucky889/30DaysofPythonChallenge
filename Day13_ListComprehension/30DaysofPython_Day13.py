@@ -55,4 +55,55 @@ print(positive_even_numbers)    # [4, 6, 8, 10]
 # flattening a three dimensional array
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flattened_list =  [number for row in list_of_lists for number in row]
-print(flattened_list)   #[1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(flattened_list)   # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Lambda function
+"""
+Lambda function is a small anonymous function without a name. it can any number of arguments,
+but can only have one expression. lambda function is similar to anonymus functions in JavaScript.
+We need it when we when we want to write ananonymous function inside another function
+"""
+ # creatingg a lambda function
+"""
+to create a lambda function we use lambda keyword followed by a parameter(s), followed by an expression.
+see the syntax and example below.  Lambda function does not use return but it explicitly returns the expression
+
+# syntax
+x = lambda param1, param2,  param3: param1 + param2 + param3
+print(x(arg1, arg2, arg3))
+"""
+
+# Example:
+
+# named function
+def add_two_nums(a, b):
+    return a+ b
+
+print(add_two_nums(2, 3))   # 5
+
+# lets change the above function to a lambda function
+add_two_nums = lambda a, b: a + b
+print(add_two_nums(2, 3))   # 5
+
+# self invoking lambda function
+(lambda a, b: a + b)(2,3)   # 5 - need to encapsulate it in print() to see the result in the console 
+
+square =lambda x : x ** 2
+print(square(3))    # 9
+cube = lambda x : x ** 3
+print(cube(3))      # 27
+
+# multiple variables
+multiple_variable = lambda a, b, c: a ** 2 - 3* b + 4 * c
+print(multiple_variable(5, 3, 3)) # 22
+
+# lambda function inside another function
+# using a lambda function inside another function
+def power(x):
+    return lambda n : x ** n
+
+cube = power(2)(3)  # function power now need 2 arguments to run, in seperate rounded brackets
+print(cube)         # 8
+two_power_of_five = power(2)(5)
+print(two_power_of_five)    # 32
+
