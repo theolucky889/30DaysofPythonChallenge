@@ -80,7 +80,7 @@ Taiwan
 Taipei
 '''
 
-# Object Methos
+# Object Methods
 # Objects can have methods. The methods are functions which belong to the object
 # Example:
 class Person:
