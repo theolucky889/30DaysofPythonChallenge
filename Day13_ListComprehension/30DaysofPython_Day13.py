@@ -34,7 +34,7 @@ print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 # make a list of tuples
 numbers = [(i, i * i) for i in range(11)]
-print(numbers)      # [(0, 0), (1, 1,), (2, 4), (3, 9), (4, 16), (5, 25)]
+print(numbers)      # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
 
 # example 3
 # list comprehension can be combined with if expression
