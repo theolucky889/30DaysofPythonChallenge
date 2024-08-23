@@ -59,7 +59,7 @@ names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')],
 """output
 ['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']"""
 
-concat_strings = [[name for row in names for name in row]
+concat_strings = [f"{first} {last}"
                   for name_list in names
-                  for names in name_list]
+                  for first, last in name_list]
 print(concat_strings)
