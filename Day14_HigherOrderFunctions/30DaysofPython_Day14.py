@@ -22,3 +22,33 @@ def higher_order_function(f, lst):  # a function as a parameter
 result = higher_order_function(sum_numbers, [1, 2, 3, 4, 5])
 print(result)   # 15
 
+
+# Function as a Return Value
+def square(x):
+    return x ** 2
+
+def cube(x):
+    return x ** 3
+
+def absolute(x):
+    if x >= 0:
+        return x
+    else:
+        return -(x)
+    
+def higher_order_function(type):
+    if type == 'square':
+        return square
+    if type == 'cube':
+        return cube
+    if type == 'absolute':
+        return absolute
+    
+result = higher_order_function('square')
+print(result(3))    # 9
+result = higher_order_function('cube')
+print(result(3))    # 27
+result = higher_order_function('absolute')
+print(result(-3))   # 3
+
+# as we can see from the above example that the higher order function is returning different functions depending on the passed parameter
