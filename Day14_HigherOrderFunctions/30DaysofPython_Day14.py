@@ -160,3 +160,5 @@ print(list(names_upper_cased))  # ['THEODORE', 'LUCKY', 'TENDY', 'VALENCIA']
 # lets use the lambda function
 names_upper_cased = map(lambda name: name.upper(), names)
 print(list(names_upper_cased))  # ['THEODORE', 'LUCKY', 'TENDY', 'VALENCIA']
+
+# What actually map does is iterating over a list. For instance, it changes the name to upper case and returns a new list
