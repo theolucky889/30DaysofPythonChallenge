@@ -69,3 +69,56 @@ def add_ten():
 closure_result = add_ten()
 print(closure_result(5))    # 15
 print(closure_result(10))   # 20
+
+# Python Decorators
+"""
+A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying
+its structure. Decorators are usually called before the definition of a function you want to decorate.
+"""
+
+# Creating Decorators
+"""
+To create a decorator function, we need an outer function with an inner wrapper function
+"""
+
+# Normal function
+def greeting():
+    return 'Welcome to Python'
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+g = uppercase_decorator(greeting)
+print(g())  # WELCOME TO PYTHON
+
+# Implement the example above using decorator
+'''This decorator function is a higher order function that takes a function as a parameter'''
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+@uppercase_decorator
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+
+# Accepting Parameters in Decorator Functions
+'''
+Most of the time we need our functions to take parameters, so we might need to define a decorator that accepts parameters
+'''
+
+def decorator_with_parameters(function):
+    def wrapper_accepting_parameters(para1, para2, para3):
+        function(para1, para2, para3)
+        print("I live in {}".format(para3))
+    return wrapper_accepting_parameters
+
+@decorator_with_parameters
+def print_full_name(first_name, last_name, country):
+    print("I am {} {}. I love to learn.".format(first_name, last_name, country))
+
+print_full_name("Theodore Lucky", "Tendy", "Taiwan")
