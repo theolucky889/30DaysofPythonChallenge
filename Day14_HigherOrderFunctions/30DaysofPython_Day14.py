@@ -106,6 +106,29 @@ def greeting():
     return 'Welcome to Python'
 print(greeting())   # WELCOME TO PYTHON
 
+# Appliying Multiple Decorators to a Single Function
+'''These decorator functions are higher order functions that take functions as parameters'''
+# First decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+# Second decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+    
+    return wrapper
+@split_string_decorator
+@uppercase_decorator    # order with decorators is important in this case - .upper() function does not work with lists
+def greeting():
+    return 'Welcome to Python'
+print(greeting())   # WELCOME TO PYTHON
+
 # Accepting Parameters in Decorator Functions
 '''
 Most of the time we need our functions to take parameters, so we might need to define a decorator that accepts parameters
@@ -162,3 +185,58 @@ names_upper_cased = map(lambda name: name.upper(), names)
 print(list(names_upper_cased))  # ['THEODORE', 'LUCKY', 'TENDY', 'VALENCIA']
 
 # What actually map does is iterating over a list. For instance, it changes the name to upper case and returns a new list
+
+
+# Python - Filter Function
+'''This filter() function calls the specific function which returns boolean for each item of the specified iterable(list).
+it filters the items that satisfy the filtering criteria'''
+# syntax
+filter(function, iterable)
+
+# Ex 1
+# Lets filter only even numbers
+numbers = [1, 2, 3, 4, 5]   # iterable
+
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    return False
+
+even_numbers = filter(is_even, numbers)
+print(list(even_numbers))   # [2, 4]
+
+# Ex 2
+numbers = [1, 2, 3, 4, 5]   # iterable
+
+def is_odd(num):
+    if num % 2 != 0:
+        return True
+    return False
+
+odd_numbers = filter(is_odd, numbers)
+print(list(odd_numbers))    # [1, 3, 5]
+
+
+# Ex 3 
+# Filter Long name
+names = ['Theodore', 'Lucky', 'Tendy', 'Valencia']  # Iterable
+def is_long_name(name):
+    if len(name) > 7:
+        return True
+    return False
+
+long_names = filter(is_long_name, names)
+print(list(long_names)) # ['Theodore']
+
+
+# Python - Reduce Function
+'''the reduce() function is defined in the functools module and we should import it from this module. Like map and filter it takes
+two parameters, a function and an iterable. Howerver, it does not return another iterable, instead it returns a single value'''
+from functools import reduce
+# Ex 1
+numbers_str = ['1', '2', '3', '4', '5']     # Iterable
+def add_two_nums(x, y):
+    return int(x) + int(y)
+
+total = reduce(add_two_nums, numbers_str)
+print(total)    # 15
